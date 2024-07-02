@@ -37,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <h1>描いた都道府県発表ドラゴン</h1>
+      <a href='https://github.com/ret2home/cvsemi2024' target='_blank'>GitHub</a>
       {imgsrc &&
         <img src={imgsrc} />
       }

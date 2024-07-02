@@ -36,15 +36,17 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>描いた都道府県発表ドラゴン</h1>
-      <a href='https://github.com/ret2home/cvsemi2024' target='_blank'>GitHub</a>
+      <div>
+        <h1>描いた都道府県発表ドラゴン</h1>
+        <a href='https://github.com/ret2home/cvsemi2024' target='_blank'>GitHub</a>
+      </div>
       {imgsrc &&
         <img src={imgsrc} />
       }
       {loading &&
         <h3>Loading...</h3>
       }
-      <div><button onClick={onClick} style={{margin: '15px'}}>発表！</button></div>
+      <div><button onClick={onClick} style={{ margin: '15px' }}>発表！</button></div>
       {canvas &&
         <div>
           <ReactSketchCanvas ref={canvas} height="500px" strokeColor='black' strokeWidth={6} />
